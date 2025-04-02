@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Accessibility Checker</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/skeleton.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="u-full-width">Webpage Accessibility Checker</h1>
+
+        <form id="form">
+            <div class="row">
+                <div class="twelve columns">
+                    <label for="input">Enter a webpage address (https://exempel.com):</label>
+                    <input type="url" id="input" class="u-full-width" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <button type="submit" id="scan-button" class="button-primary u-full-width">Check</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="loading" class="loading" style="display: none;">Processing... Please wait.</div>
+
+        <div id="results" style="display: none;">
+            <h2>Results</h2>
+            <p>
+                <span id="error-count" class="error-count">0</span> Errors and
+                <span id="warning-count" class="warning-count">0</span> warningar found.
+            </p>
+            <div id="result-list"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

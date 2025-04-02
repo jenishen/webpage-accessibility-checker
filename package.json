@@ -1,0 +1,17 @@
+{
+  "name": "webpage-accessibility-checker_sv",
+  "version": "1.0.0",
+  "description": "A simple webpage accessibility checker using Pa11y to identify and report accessibility issues.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": ["accessibility", "pa11y", "express", "web", "checker", "audit", "test", "html"],
+  "author": "Jennifer Shen",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "pa11y": "^8.0.0"
+  }
+}
